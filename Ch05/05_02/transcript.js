@@ -33,6 +33,12 @@ for (var p in pages) {
     console.log(p, pages[p]);
   }
 }
+for (var p in pages) {
+  if (pages.hasOwnProperty(p)) {
+    console.log(p, pages[p]);
+    console.log("Typeof: ", typeof pages[p])
+  }
+}
 
 // More info:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
