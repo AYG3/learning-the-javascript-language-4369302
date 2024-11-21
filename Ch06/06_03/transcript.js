@@ -4,6 +4,11 @@ function speakSomething(what = "Default speech", howMany = 10) {
   }
 }
 
+function speak({what = "default checkers", howMany = 5} = {}){
+  for (let i = 0; i < howMany; i++){
+    console.log(what + " (" + i + ")");
+  }
+}
 speakSomething("Good morning", 5);
 speakSomething("Good morning");
 speakSomething();
