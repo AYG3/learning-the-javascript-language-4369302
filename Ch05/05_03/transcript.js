@@ -33,6 +33,9 @@ var birdMap = new Map();
 birdMap.set("genus", "corvus");
 birdMap.set("species", "corvax");
 birdMap.set("commonName", "raven");
+aMap.set("genus", "corvus");
+aMap.set("species", "corvaMapx");
+aMap.set("commonName", "raven");
 
 birdMap.get("genus"); // 'corvus'
 
