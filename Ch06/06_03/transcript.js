@@ -9,6 +9,22 @@ function speak({what = "default checkers", howMany = 5} = {}){
     console.log(what + " (" + i + ")");
   }
 }
+
+function randomizer(limit) {
+  randomNum =  Math.floor(Math.random() * limit) + 1
+  let myNum = randomNum
+  console.log("Local mynum: ", myNum)
+  console.log("global Mynum: ", global.myNum)
+}
+
+function randomGlobal(limit) {
+  randomNum =  Math.floor(Math.random() * limit) + 1
+  myNum = randomNum
+  console.log("Local mynum: ", myNum)
+  console.log("global Mynum: ", global.myNum)
+}
+
+
 speakSomething("Good morning", 5);
 speakSomething("Good morning");
 speakSomething();
